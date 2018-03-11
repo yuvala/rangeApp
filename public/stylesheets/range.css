@@ -1,0 +1,81 @@
+
+.scale-x {
+    border: 1px palegoldenrod solid;
+    position:relative;
+}
+
+.units{
+    height: 10px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+
+    position: absolute;
+    left: 0;
+    right: 0
+}
+
+.tick{
+    /* border:1px red solid; */
+    border-left:1px black solid;
+    /* flex-grow:1;  */
+    position: relative;
+    flex-shrink: 1;
+}
+
+
+.tick-val{
+    position: absolute;
+    /* border: 1px green solid; */
+    top: 11px;
+    right:0;
+}
+
+.tick-val span{
+    /* background-color: orange; */
+    padding-left: 50%;
+    font-size: 12px; 
+}
+ 
+.range-line {
+    border: 1px red solid;
+    height:5px;
+
+    position: absolute;
+    left: 0;
+    right: 0
+}
+
+
+
+.righty, .lefty{
+    width: 100px;
+    background-color: pink;
+    /* height: 5px; */
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    
+}
+.righty {
+    width:100px;
+    right:0;
+
+}
+.lefty {
+    width:100px;
+    left: 0;
+}
+.righty .holder {
+    text-align: left;
+}
+.lefty .holder {
+    text-align: right;
+}
+.holder {
+    width: 10px;
+    height: 100%;
+    background: black;
+    cursor: pointer;
+}
